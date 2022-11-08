@@ -19,6 +19,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/balance', [BalanceController::class, 'show']);
-Route::put('/balance', [BalanceController::class, 'cash_in']);
-Route::put('/balance', [BalanceController::class, 'debit']);
+
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get('/balance', [BalanceController::class, 'show']);
+    Route::put('/balance', [BalanceController::class, 'cash_in']);
+    Route::put('/balance', [BalanceController::class, 'debit']);
+});
