@@ -17,11 +17,14 @@
 > php artisan serve
 
 **POSTMAN**
+
 • REST API route:
 >/api/balance
+
 • POST
 • PUT
 • GET
+
 **_Login_**
 >/api/login
 
