@@ -16,6 +16,7 @@
 • Start the local development server
 > php artisan serve
 
+
 **POSTMAN**
 
 • REST API route:
