@@ -15,7 +15,7 @@
 
 • Start the local development server
 > php artisan serve
-
+<br/>
 
 **POSTMAN**
 
@@ -26,8 +26,11 @@
 • PUT
 • GET
 
+<br/>
+
 **_Login_**
 >/api/login
+<br/>
 
 **_Register_**
 >/api/register
