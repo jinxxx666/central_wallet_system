@@ -16,9 +16,9 @@ class CreateBalancesTable extends Migration
         Schema::create('balances', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->bigInteger('total_amount');
-            $table->bigInteger('current_balance');
-            $table->bigInteger('used_amount');
+            $table->string('total_amount');
+            $table->string('current_balance');
+            $table->string('used_amount');
             $table->timestamps();
         });
     }
